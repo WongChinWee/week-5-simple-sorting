@@ -1,5 +1,5 @@
 //documentation section 
-/* Exercise 1 - Bubble Sort*/
+/* Exercise 1 - Bubble Sort */
 
 //pre-processor section 
 #include<stdio.h>
@@ -7,11 +7,33 @@
 //global variable section 
 
 
-//main function section 
-int main(){
-    //write here your program
-    
+//main function section
 
+
+void bubbleSort(int array[], int size){
+
+    UA[10] = {5, 1, 4, 2, 8};
+
+    //loop to access each array element
+    for (int step = 0; step < size - 1; ++step) {
+
+        //loop to compare array elements
+        for (int i = 0; i < size - step - 1; ++i) {
+
+            // compare two adjacent elements
+            // change > to < to sort in descending order
+            if (array[i] > array[i + 1]) {
+
+                //swapping occurs if elements
+                //are not in the intended order
+                int temp = array[i];
+                array[i] = array[i + 1];
+                array[i + 1] = temp;
+            }
+        }
+    }
 }
 
-//user-defined section 
+
+//user-defined section
+
